@@ -1,0 +1,213 @@
+
+    *,
+    *::after,
+    *::before {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 62.5%;
+      font-family: sans-serif;
+      @media only screen and (max-width: 75em) {
+       font-size: 50%;
+          }
+
+    }
+
+    body {
+      font-size: 1.5rem;
+      color: black;
+      line-height: 1.4;
+      font-family: sans-serif;
+      background-color: whitesmoke;
+
+    }
+
+
+
+    .main {
+      font-size: 1.5rem;
+      color: black;
+      font-family: sans-serif;
+      font-weight: 500;
+overflow-x: hidden;
+     width: 100vw;
+  height: 100vh;
+     &::-webkit-scrollbar {
+      display: none;
+    }
+
+    }
+
+
+
+
+    .section {
+      width: 100%;
+      height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+    }
+
+    .table-section {
+
+  border-radius: 2px;
+        width: 40%;
+     height: fit-content;
+     background-color: grey;
+     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.15);
+
+    }
+
+    h2 {
+      padding-left: .5rem;
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .form {
+        height: 30vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+      //  justify-content: center;
+        flex-direction: column;
+        padding: .5rem;
+
+
+        &__input {
+  width: 90%;
+  height: 3rem;
+  margin-top: 2rem;
+  border-radius: 2px;
+  border: none;
+  outline: 1px solid grey;
+  padding-left: .5rem;
+
+
+
+
+
+        }
+
+        &__button {
+
+        float: left;
+        margin-top: 2rem;
+        width: 8rem;
+        height: 2.8rem;
+        text-align: center;
+        font-weight: 550;
+        font-size: 1.4rem;
+        cursor: pointer;
+
+
+        }
+
+        &__list {
+
+ height: fit-content;
+
+
+
+
+
+        }
+
+
+
+
+
+
+    }
+
+
+    .list {
+      display: flex;
+     // align-items: center;
+      justify-content: center;
+
+
+      &__select {
+
+
+
+      }
+
+
+      &__item {
+
+
+        display: flex;
+    width: 90%;
+  //  background-color: white;
+    border-radius: 2px;
+    height: 3.5rem;
+
+//margin-top: 1rem;
+    align-items: center;
+  font-weight: 550;
+    justify-content: space-between;
+    margin-bottom: 0.85rem;
+    transition: var(--transition);
+    padding: 0.25rem 1rem;
+    font-size: 1.2rem;
+    border-radius: var(--radius);
+    text-transform: capitalize;
+
+    &:hover {
+      background-color: white;
+      color : blue;
+      cursor: pointer;
+
+    }
+
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+
+
+    .checkbox {
+margin-top: 1rem;
+width: 100%;
+
+display: flex;
+align-items: start;
+padding-left: 2.7rem;
+justify-content: start;
+
+ &__input {
+   width: 1.5rem;
+   height: 1.5rem;
+ }
+
+
+
+
+
+
+
+
+
+    }
+
